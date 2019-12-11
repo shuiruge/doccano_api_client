@@ -253,8 +253,10 @@ class DoccanoClient(_Router):
             project_id (int):
             url_parameters (dict): `limit` and `offset`
                 It can be `{'limit': [100]}` or `{'offset': [50]}`,
-                or `{'limit': [100], 'offset': [50]}`. Notice that the
-                value is a list of int.
+                or `{'limit': [100], 'offset': [50]}`. This fetches
+                the documents with ID from 51 to 150 (100 + 50).
+                
+                Notice that the value is a list of int. 
 
         Returns:
             requests.models.Response: The request response.
